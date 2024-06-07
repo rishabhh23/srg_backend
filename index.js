@@ -11,13 +11,6 @@ connectDB();
 const app = express();
 
 // Middleware order matters
-// app.use(cors(
-//   {
-//     origin : ["https://smart-report-generator-api.vercel.app/"],
-//     methods: ["GET"],
-//     credentials: true,
-//   }
-// ));
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
