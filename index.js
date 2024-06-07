@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.get("/",(req,res) => {
-  console.log("Backend Deployed!");
+  res.send("Backend Deployed!");
 })
 
 // get request to the database
